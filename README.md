@@ -56,8 +56,8 @@
   </picture>
   <br><br>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Clinux%2Cdebian%2Cwindows%2Cbash%2Cpowershell%2Cdocker%2Caws%2Cruby%2Carduino%2Cgodot%2Cblender%2Cgimp&theme=dark&perline=14" />
-    <img src="https://skillicons.dev/icons?i=git%2Cgithub%2Clinux%2Cdebian%2Cwindows%2Cbash%2Cpowershell%2Cdocker%2Caws%2Cruby%2Carduino%2Cgodot%2Cblender%2Cgimp&theme=light&perline=14" alt="Git, GitHub, Linux, Debian, Windows, Bash, PowerShell, Docker, AWS, Ruby, Arduino, Godot, Blender, GIMP" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Clinux%2Cdebian%2Cwindows%2Cbash%2Cpowershell%2Cdocker%2Caws%2Cruby%2Carduino%2Cgodot%2Cblender&theme=dark&perline=13" />
+    <img src="https://skillicons.dev/icons?i=git%2Cgithub%2Clinux%2Cdebian%2Cwindows%2Cbash%2Cpowershell%2Cdocker%2Caws%2Cruby%2Carduino%2Cgodot%2Cblender&theme=light&perline=13" alt="Git, GitHub, Linux, Debian, Windows, Bash, PowerShell, Docker, AWS, Ruby, Arduino, Godot, Blender" />
   </picture>
 </p>
 
@@ -70,8 +70,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ulises47123&locale=es&theme=github-dark-blue&hide_border=true" />
-    <img src="https://streak-stats.demolab.com/?user=ulises47123&locale=es&theme=default&hide_border=true" alt="Racha de contribuciones" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ulises47123&locale=es&theme=github-dark-blue&hide_border=true&disable_animations=true" />
+    <img src="https://streak-stats.demolab.com/?user=ulises47123&locale=es&theme=default&hide_border=true&disable_animations=true" alt="Racha de contribuciones" />
   </picture>
 </p>
 
