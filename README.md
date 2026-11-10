@@ -1,9 +1,11 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1200&color=58A6FF&center=true&vcenter=true&width=620&lines=Hola%2C+soy+Ulises+Juli%C3%A1n+%F0%9F%91%8B;Soporte+inform%C3%A1tico+%2B+desarrollo;Python+%C2%B7+Web+%C2%B7+Android;Desde+Jujuy%2C+Argentina+%F0%9F%87%A6%F0%9F%87%B7" alt="Hola, soy Ulises Julián" />
+<h1>Hola, soy Ulises Julián 👋</h1>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1500&color=58A6FF&center=true&vcenter=true&repeat=true&width=520&height=34&lines=T%C3%A9cnico+en+soporte+inform%C3%A1tico;Python+%C2%B7+Web+%C2%B7+Android;Desde+Jujuy%2C+Argentina" alt="Técnico en soporte informático · Python · Web · Android" />
 
 <a href="https://ulises47123.github.io/cvju/"><img src="https://img.shields.io/badge/Ver_mi_CV-1e2a3a?style=for-the-badge&logo=readdotcv&logoColor=white" alt="Ver mi CV" /></a>
-<a href="https://ulises47123.github.io/portafolio-v2/"><img src="https://img.shields.io/badge/Portafolio-f0ff57?style=for-the-badge&logo=githubpages&logoColor=black" alt="Portafolio" /></a>
+<a href="https://ulises47123.github.io/portafolio-v2/"><img src="https://img.shields.io/badge/Portafolio-238636?style=for-the-badge&logo=github&logoColor=white" alt="Portafolio" /></a>
 <img src="https://komarev.com/ghpvc/?username=ulises47123&label=Visitas&color=58a6ff&style=for-the-badge" alt="Visitas al perfil" />
 
 </div>
@@ -33,67 +35,28 @@
 
 ### 🧰 Tecnologías y herramientas
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="36" alt="Python" title="Python" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="36" alt="FastAPI" title="FastAPI" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="36" alt="JavaScript" title="JavaScript" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="36" alt="HTML5" title="HTML5" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="36" alt="CSS3" title="CSS3" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" height="36" alt="Tailwind CSS" title="Tailwind CSS" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg" height="36" alt="Astro" title="Astro" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" height="36" alt="Electron" title="Electron" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" height="36" alt="Kotlin" title="Kotlin" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" height="36" alt="Android" title="Android" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="36" alt="SQLite" title="SQLite" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="36" alt="MySQL" title="MySQL" />
-</div>
-<br>
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="36" alt="Git" title="Git" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="36" alt="Linux" title="Linux" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" height="36" alt="Debian" title="Debian" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows11/windows11-original.svg" height="36" alt="Windows" title="Windows" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="36" alt="Bash" title="Bash" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg" height="36" alt="PowerShell" title="PowerShell" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="36" alt="Docker" title="Docker" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height="36" alt="AWS" title="AWS" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" height="36" alt="Ruby" title="Ruby" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="36" alt="Arduino" title="Arduino" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" height="36" alt="Godot" title="Godot" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" height="36" alt="Blender" title="Blender" />
-  <img width="8" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg" height="36" alt="GIMP" title="GIMP" />
-</div>
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,fastapi,js,html,css,tailwind,astro,electron,kotlin,androidstudio,sqlite,mysql&theme=dark&perline=12" />
+    <img src="https://skillicons.dev/icons?i=py,fastapi,js,html,css,tailwind,astro,electron,kotlin,androidstudio,sqlite,mysql&theme=light&perline=12" alt="Python, FastAPI, JavaScript, HTML, CSS, Tailwind, Astro, Electron, Kotlin, Android Studio, SQLite, MySQL" />
+  </picture>
+  <br>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git,github,linux,debian,windows,bash,powershell,docker,aws,ruby,arduino,godot,blender,gimp&theme=dark&perline=14" />
+    <img src="https://skillicons.dev/icons?i=git,github,linux,debian,windows,bash,powershell,docker,aws,ruby,arduino,godot,blender,gimp&theme=light&perline=14" alt="Git, GitHub, Linux, Debian, Windows, Bash, PowerShell, Docker, AWS, Ruby, Arduino, Godot, Blender, GIMP" />
+  </picture>
+</p>
 
 ### 📊 Estadísticas
 
 <div align="center">
-  <img src="assets/resumen.svg" height="230" alt="Resumen en GitHub" />
-  <img src="assets/lenguajes.svg" height="230" alt="Lenguajes más usados" />
+  <img src="assets/resumen.svg" alt="Resumen en GitHub" />
+  <img src="assets/lenguajes.svg" alt="Lenguajes más usados" />
   <br><br>
-  <img src="https://streak-stats.demolab.com/?user=ulises47123&locale=es&hide_border=true&background=00000000&ring=58A6FF&fire=F0FF57&currStreakLabel=58A6FF" alt="Racha de contribuciones" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ulises47123&locale=es&theme=github-dark-blue&hide_border=true" />
+    <img src="https://streak-stats.demolab.com/?user=ulises47123&locale=es&theme=default&hide_border=true" alt="Racha de contribuciones" />
+  </picture>
 </div>
 
 ### 📫 Contacto
@@ -119,5 +82,8 @@
 <br>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ulises47123/mod/main/snake.svg" alt="Serpiente comiéndose mis contribuciones" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ulises47123/mod/main/snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/ulises47123/mod/main/snake.svg" alt="Serpiente comiéndose mis contribuciones" />
+  </picture>
 </div>

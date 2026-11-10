@@ -66,10 +66,10 @@ def contribuciones_anio():
 
 ESTILO = """<style>
   .fondo { fill: #ffffff; stroke: #d0d7de; }
-  .titulo { font: 600 16px 'Segoe UI', Ubuntu, sans-serif; fill: #0969da; }
-  .texto { font: 400 13px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
-  .tenue { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: #59636e; }
-  .numero { font: 700 22px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
+  .titulo { font: 600 19px 'Segoe UI', Ubuntu, sans-serif; fill: #0969da; }
+  .texto { font: 400 15px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
+  .tenue { font: 400 14px 'Segoe UI', Ubuntu, sans-serif; fill: #59636e; }
+  .numero { font: 700 32px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
   .pista { fill: #eaeef2; }
   @media (prefers-color-scheme: dark) {
     .fondo { fill: #0d1117; stroke: #30363d; }
@@ -90,23 +90,23 @@ def tarjeta_lenguajes(repos):
     suma = sum(total.values()) or 1
     top = sorted(total.items(), key=lambda x: -x[1])[:8]
 
-    ancho, alto = 400, 70 + 26 * len(top)
-    filas, y = [], 52
+    ancho, alto = 420, 270
+    filas, y = [], 66
     for lang, b in top:
         pct = b / suma * 100
         color = COLORES.get(lang, "#8b949e")
-        barra = max(2, 170 * pct / 100)
+        barra = max(3, 190 * pct / 100)
         filas.append(
-            f'<circle cx="30" cy="{y - 4}" r="5" fill="{color}"/>'
-            f'<text x="42" y="{y}" class="texto">{lang}</text>'
-            f'<rect x="150" y="{y - 10}" width="170" height="8" rx="4" class="pista"/>'
-            f'<rect x="150" y="{y - 10}" width="{barra:.1f}" height="8" rx="4" fill="{color}"/>'
-            f'<text x="330" y="{y}" class="tenue">{pct:.1f}%</text>')
-        y += 26
+            f'<circle cx="30" cy="{y - 5}" r="6" fill="{color}"/>'
+            f'<text x="44" y="{y}" class="texto">{lang}</text>'
+            f'<rect x="150" y="{y - 11}" width="190" height="10" rx="5" class="pista"/>'
+            f'<rect x="150" y="{y - 11}" width="{barra:.1f}" height="10" rx="5" fill="{color}"/>'
+            f'<text x="352" y="{y}" class="tenue">{pct:.1f}%</text>')
+        y += 25
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{ancho}" height="{alto}" '
             f'viewBox="0 0 {ancho} {alto}">{ESTILO}'
             f'<rect x="0.5" y="0.5" width="{ancho - 1}" height="{alto - 1}" rx="10" class="fondo"/>'
-            f'<text x="20" y="30" class="titulo">Lenguajes más usados</text>'
+            f'<text x="22" y="34" class="titulo">Lenguajes más usados</text>'
             + "".join(filas) + "</svg>")
 
 
@@ -120,20 +120,20 @@ def tarjeta_resumen(repos, contribs):
         (str(contribs) if contribs is not None else "—", "contribuciones (último año)"),
         (f"{anios:.1f}", "años en GitHub"),
     ]
-    ancho, alto = 400, 70 + 26 * 8
+    ancho, alto = 420, 270
     celdas = []
     for i, (num, etiqueta) in enumerate(datos):
-        x = 30 + (i % 2) * 180
-        y = 95 + (i // 2) * 95
+        x = 30 + (i % 2) * 200
+        y = 100 + (i // 2) * 88
         celdas.append(f'<text x="{x}" y="{y}" class="numero">{num}</text>'
-                      f'<text x="{x}" y="{y + 24}" class="tenue">{etiqueta}</text>')
+                      f'<text x="{x}" y="{y + 26}" class="tenue">{etiqueta}</text>')
     fecha = datetime.now(timezone.utc).strftime("%d/%m/%Y")
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{ancho}" height="{alto}" '
             f'viewBox="0 0 {ancho} {alto}">{ESTILO}'
             f'<rect x="0.5" y="0.5" width="{ancho - 1}" height="{alto - 1}" rx="10" class="fondo"/>'
-            f'<text x="20" y="30" class="titulo">Resumen en GitHub</text>'
+            f'<text x="22" y="34" class="titulo">Resumen en GitHub</text>'
             + "".join(celdas) +
-            f'<text x="20" y="{alto - 16}" class="tenue">Actualizado el {fecha}</text></svg>')
+            f'<text x="22" y="{alto - 18}" class="tenue">Actualizado el {fecha}</text></svg>')
 
 
 def main():
