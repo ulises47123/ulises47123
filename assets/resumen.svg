@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="278" viewBox="0 0 400 278"><style>
+  .fondo { fill: #ffffff; stroke: #d0d7de; }
+  .titulo { font: 600 16px 'Segoe UI', Ubuntu, sans-serif; fill: #0969da; }
+  .texto { font: 400 13px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
+  .tenue { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: #59636e; }
+  .numero { font: 700 22px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
+  .pista { fill: #eaeef2; }
+  @media (prefers-color-scheme: dark) {
+    .fondo { fill: #0d1117; stroke: #30363d; }
+    .titulo { fill: #58a6ff; }
+    .texto, .numero { fill: #e6edf3; }
+    .tenue { fill: #9198a1; }
+    .pista { fill: #21262d; }
+  }
+</style><rect x="0.5" y="0.5" width="399" height="277" rx="10" class="fondo"/><text x="20" y="30" class="titulo">Resumen en GitHub</text><text x="30" y="95" class="numero">35</text><text x="30" y="119" class="tenue">repositorios</text><text x="210" y="95" class="numero">19</text><text x="210" y="119" class="tenue">páginas publicadas</text><text x="30" y="190" class="numero">128</text><text x="30" y="214" class="tenue">contribuciones (último año)</text><text x="210" y="190" class="numero">1.9</text><text x="210" y="214" class="tenue">años en GitHub</text><text x="20" y="262" class="tenue">Actualizado el 10/11/2026</text></svg>

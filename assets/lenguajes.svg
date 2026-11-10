@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="278" viewBox="0 0 400 278"><style>
+  .fondo { fill: #ffffff; stroke: #d0d7de; }
+  .titulo { font: 600 16px 'Segoe UI', Ubuntu, sans-serif; fill: #0969da; }
+  .texto { font: 400 13px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
+  .tenue { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: #59636e; }
+  .numero { font: 700 22px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
+  .pista { fill: #eaeef2; }
+  @media (prefers-color-scheme: dark) {
+    .fondo { fill: #0d1117; stroke: #30363d; }
+    .titulo { fill: #58a6ff; }
+    .texto, .numero { fill: #e6edf3; }
+    .tenue { fill: #9198a1; }
+    .pista { fill: #21262d; }
+  }
+</style><rect x="0.5" y="0.5" width="399" height="277" rx="10" class="fondo"/><text x="20" y="30" class="titulo">Lenguajes más usados</text><circle cx="30" cy="48" r="5" fill="#3572A5"/><text x="42" y="52" class="texto">Python</text><rect x="150" y="42" width="170" height="8" rx="4" class="pista"/><rect x="150" y="42" width="75.2" height="8" rx="4" fill="#3572A5"/><text x="330" y="52" class="tenue">44.2%</text><circle cx="30" cy="74" r="5" fill="#f1e05a"/><text x="42" y="78" class="texto">JavaScript</text><rect x="150" y="68" width="170" height="8" rx="4" class="pista"/><rect x="150" y="68" width="36.2" height="8" rx="4" fill="#f1e05a"/><text x="330" y="78" class="tenue">21.3%</text><circle cx="30" cy="100" r="5" fill="#e34c26"/><text x="42" y="104" class="texto">HTML</text><rect x="150" y="94" width="170" height="8" rx="4" class="pista"/><rect x="150" y="94" width="35.8" height="8" rx="4" fill="#e34c26"/><text x="330" y="104" class="tenue">21.0%</text><circle cx="30" cy="126" r="5" fill="#A97BFF"/><text x="42" y="130" class="texto">Kotlin</text><rect x="150" y="120" width="170" height="8" rx="4" class="pista"/><rect x="150" y="120" width="9.7" height="8" rx="4" fill="#A97BFF"/><text x="330" y="130" class="tenue">5.7%</text><circle cx="30" cy="152" r="5" fill="#563d7c"/><text x="42" y="156" class="texto">CSS</text><rect x="150" y="146" width="170" height="8" rx="4" class="pista"/><rect x="150" y="146" width="7.8" height="8" rx="4" fill="#563d7c"/><text x="330" y="156" class="tenue">4.6%</text><circle cx="30" cy="178" r="5" fill="#89e051"/><text x="42" y="182" class="texto">Shell</text><rect x="150" y="172" width="170" height="8" rx="4" class="pista"/><rect x="150" y="172" width="3.4" height="8" rx="4" fill="#89e051"/><text x="330" y="182" class="tenue">2.0%</text><circle cx="30" cy="204" r="5" fill="#ff5a03"/><text x="42" y="208" class="texto">Astro</text><rect x="150" y="198" width="170" height="8" rx="4" class="pista"/><rect x="150" y="198" width="2.0" height="8" rx="4" fill="#ff5a03"/><text x="330" y="208" class="tenue">0.9%</text><circle cx="30" cy="230" r="5" fill="#012456"/><text x="42" y="234" class="texto">PowerShell</text><rect x="150" y="224" width="170" height="8" rx="4" class="pista"/><rect x="150" y="224" width="2.0" height="8" rx="4" fill="#012456"/><text x="330" y="234" class="tenue">0.2%</text></svg>
