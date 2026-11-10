@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0d1117"/><stop offset=".55" stop-color="#132a4a"/><stop offset="1" stop-color="#1f6feb"/>
+  </linearGradient>
+  <pattern id="p" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+  </pattern>
+</defs>
+<style>
+  .n { font: 700 46px 'Segoe UI', Ubuntu, sans-serif; fill: #ffffff; }
+  .s { font: 400 20px 'Segoe UI', Ubuntu, sans-serif; fill: #c9d1d9; }
+  .c { font: 600 15px Consolas, 'Fira Code', monospace; fill: #79c0ff; }
+  .k { font: 700 120px Consolas, monospace; fill: #ffffff; fill-opacity: .07; }
+  .cur { animation: b 1s step-end infinite; }
+  @keyframes b { 50% { opacity: 0; } }
+</style>
+<rect width="900" height="220" rx="14" fill="url(#g)"/>
+<rect width="900" height="220" rx="14" fill="url(#p)"/>
+<text x="860" y="160" text-anchor="end" class="k">&lt;/&gt;</text>
+<text x="50" y="62" class="c">~/jujuy/argentina $ whoami</text>
+<text x="48" y="122" class="n">Ulises Julián Cabezas</text>
+<text x="50" y="160" class="s">Técnico en soporte informático · Python · Web · Android</text>
+<rect x="50" y="178" width="12" height="3" fill="#79c0ff" class="cur"/>
+</svg>

@@ -136,8 +136,103 @@ def tarjeta_resumen(repos, contribs):
             f'<text x="22" y="{alto - 18}" class="tenue">Actualizado el {fecha}</text></svg>')
 
 
+# Proyectos destacados: (repo, título, descripción, tecnologías)
+DESTACADOS = [
+    ("jujuy-ciudad-pass", "Jujuy Ciudad Pass",
+     "Plataforma turística con app Android, web y panel de administración, en un servidor propio.",
+     "Python · FastAPI · Kotlin · JS"),
+    ("proyecto-ies-5-launcher", "Campus Virtual IES N°5",
+     "App de escritorio para ver clases, notas y mensajes del campus del instituto.",
+     "Python · Pyloid · Tailwind"),
+    ("Recurso-Hidricos", "Recursos Hídricos",
+     "Sistema de gestión de personal, licencias y contratos que funciona 100 % offline.",
+     "Electron · FastAPI · SQLite"),
+    ("Milagro-Costurera-y-Arreglo", "Milagro Costurera",
+     "Página web para un emprendimiento de costura y arreglos.",
+     "Astro"),
+    ("VTuber", "VTuber 2D",
+     "Avatar que se anima con el micrófono, con cámara virtual y grabación.",
+     "Python · OpenCV"),
+    ("agiltp", "agiltp",
+     "Programas para dar formato APA y crear carátulas de trabajos prácticos.",
+     "Python"),
+]
+
+
+def esc(t):
+    return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def partir(texto, max_chars):
+    lineas, actual = [], ""
+    for palabra in texto.split():
+        if len(actual) + len(palabra) + 1 > max_chars and actual:
+            lineas.append(actual)
+            actual = palabra
+        else:
+            actual = f"{actual} {palabra}".strip()
+    return lineas + ([actual] if actual else [])
+
+
+def tarjeta_proyecto(repo, titulo, desc, tecnologias, info):
+    ancho, alto = 420, 140
+    color = COLORES.get(info.get("language") or "", "#8b949e")
+    lineas = "".join(f'<text x="22" y="{66 + i * 20}" class="texto">{esc(l)}</text>'
+                     for i, l in enumerate(partir(desc, 52)[:2]))
+    estrellas = info.get("stargazers_count", 0)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{ancho}" height="{alto}" '
+            f'viewBox="0 0 {ancho} {alto}">{ESTILO}'
+            f'<rect x="0.5" y="0.5" width="{ancho - 1}" height="{alto - 1}" rx="10" class="fondo"/>'
+            # icono de repositorio (octicon repo)
+            f'<g transform="translate(22,18)" class="tenue"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>'
+            f'<text x="46" y="31" class="titulo">{esc(titulo)}</text>'
+            + lineas +
+            f'<circle cx="28" cy="{alto - 25}" r="6" fill="{color}"/>'
+            f'<text x="40" y="{alto - 20}" class="tenue">{esc(tecnologias)}</text>'
+            f'<text x="{ancho - 22}" y="{alto - 20}" text-anchor="end" class="tenue">★ {estrellas}</text>'
+            "</svg>")
+
+
+def banner():
+    ancho, alto = 900, 220
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{ancho}" height="{alto}" viewBox="0 0 {ancho} {alto}">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0d1117"/><stop offset=".55" stop-color="#132a4a"/><stop offset="1" stop-color="#1f6feb"/>
+  </linearGradient>
+  <pattern id="p" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+  </pattern>
+</defs>
+<style>
+  .n {{ font: 700 46px 'Segoe UI', Ubuntu, sans-serif; fill: #ffffff; }}
+  .s {{ font: 400 20px 'Segoe UI', Ubuntu, sans-serif; fill: #c9d1d9; }}
+  .c {{ font: 600 15px Consolas, 'Fira Code', monospace; fill: #79c0ff; }}
+  .k {{ font: 700 120px Consolas, monospace; fill: #ffffff; fill-opacity: .07; }}
+  .cur {{ animation: b 1s step-end infinite; }}
+  @keyframes b {{ 50% {{ opacity: 0; }} }}
+</style>
+<rect width="{ancho}" height="{alto}" rx="14" fill="url(#g)"/>
+<rect width="{ancho}" height="{alto}" rx="14" fill="url(#p)"/>
+<text x="{ancho - 40}" y="160" text-anchor="end" class="k">&lt;/&gt;</text>
+<text x="50" y="62" class="c">~/jujuy/argentina $ whoami</text>
+<text x="48" y="122" class="n">Ulises Julián Cabezas</text>
+<text x="50" y="160" class="s">Técnico en soporte informático · Python · Web · Android</text>
+<rect x="50" y="178" width="12" height="3" fill="#79c0ff" class="cur"/>
+</svg>'''
+
+
 def main():
     SALIDA.mkdir(exist_ok=True)
+    (SALIDA / "banner.svg").write_text(banner(), encoding="utf-8")
+    (SALIDA / "proyectos").mkdir(exist_ok=True)
+    for repo, titulo, desc, tec in DESTACADOS:
+        try:
+            info = api(f"https://api.github.com/repos/{USUARIO}/{repo}")
+        except Exception:
+            info = {}
+        (SALIDA / "proyectos" / f"{repo}.svg").write_text(
+            tarjeta_proyecto(repo, titulo, desc, tec, info), encoding="utf-8")
     repos = repos_propios()
     (SALIDA / "lenguajes.svg").write_text(tarjeta_lenguajes(repos), encoding="utf-8")
     (SALIDA / "resumen.svg").write_text(
